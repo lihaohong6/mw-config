@@ -4518,8 +4518,6 @@ $wgConf->settings += [
 			'staffwiki' => [
 				/** Labster (Board) */
 				2551,
-				/** Void (Technology team) */
-				5258,
 				/** Harej (Board) */
 				13892,
 				/** RhinosF1 (Miraheze) (Technology team) */
@@ -4548,6 +4546,8 @@ $wgConf->settings += [
 				796544,
 				/** Reception123 (Miraheze) (Technology team and Board) */
 				796684,
+				/** Void (Miraheze) (Technology team) */
+				798213,
 			],
 		],
 	],
