@@ -601,6 +601,32 @@ switch ( $wi->dbname ) {
 			'RequestCustomDomain',
 			'SecurePoll',
 		] );
+		$wgCreateWikiLoadoutEnabled = true;
+		$wgCreateWikiLoadoutConfigs = [
+			'default' => [
+				'xml' => '/home/petramagna/loadout.xml',
+				'extensions' => [],
+				'settings' => [],
+			],
+			'fandom' => [
+				'extensions' => [
+					'dynamicpagelist4',
+					'dummyfandoommainpagetags',
+					'templatedata',
+					'tabs',
+					'tabberneue',
+					'userprofilev2',
+					'linter',
+					'discussiontools',
+					'nukedpl',
+				],
+				'settings' => [
+					'wgUseQuickInstantCommons' => false,
+					'wgMirahezeCommons' => false,
+					'wgPFEnableStringFunctions' => true,
+				],
+			],
+		];
 
 		/*
 		$wgFeaturedFeeds['test'] = [
