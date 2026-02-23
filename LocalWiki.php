@@ -586,10 +586,40 @@ switch ( $wi->dbname ) {
 	case 'metawikibeta':
 		wfLoadExtensions( [
 			'ContactPage',
+			'CreateWikiLoadout',
 			'GlobalWatchlist',
 			'IncidentReporting',
 			'RequestCustomDomain',
 		] );
+		$wgCreateWikiLoadoutEnabled = true;
+		$wgCreateWikiLoadoutConfigs = [
+			'default' => [
+				'xml' => '/home/petramagna/loadout.xml',
+				'extensions' => [ 'gadgets' ],
+				'settings' => [],
+			],
+			'fandom' => [
+				'extensions' => [
+					'gadgets',
+					'dynamicpagelist4',
+					'dummyfandoommainpagetags',
+					'templatedata',
+					'tabs',
+					'tabberneue',
+					'userprofilev2',
+					'visualeditor',
+					'linter',
+					'discussiontools',
+					'nukedpl',
+				],
+				'settings' => [
+					'wgUseQuickInstantCommons' => false,
+					'wgMirahezeCommons' => false,
+					'wgPFEnableStringFunctions' => true,
+					'wgRestrictDisplayTitle' => false,
+				],
+			],
+		];
 
 		/*
 		$wgFeaturedFeeds['test'] = [
