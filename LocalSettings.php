@@ -1072,6 +1072,16 @@ $wgConf->settings += [
 	'wgCreateWikiEnableManageInactiveWikis' => [
 		'default' => true,
 	],
+	'wgCreateWikiEnableLoadoutSelector' => [
+		'default' => true,
+	],
+	'wgCreateWikiLoadouts' => [
+		'default' => [
+			'test' => [
+				'xml' => '/home/petramagna/loadout.xml',
+			],
+		],
+	],
 	'wgCreateWikiNotificationEmail' => [
 		// Don't put plain text email here.
 		'default' => base64_decode( 'dGVjaEB3aWtpdGlkZS5vcmc=' ),
