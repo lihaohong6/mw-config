@@ -2886,7 +2886,7 @@ $wgConf->settings += [
 		'default' => true,
 	],
 	'wgImageMagickConvertCommand' => [
-		'default' => '/usr/local/bin/mediawiki-firejail-convert',
+		'default' => '/usr/local/bin/mediawiki-firejail-magick',
 	],
 	'wgJpegPixelFormat' => [
 		'default' => 'yuv420',
