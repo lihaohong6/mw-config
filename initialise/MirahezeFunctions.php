@@ -289,7 +289,7 @@ class MirahezeFunctions {
 			$requestUri = $_SERVER['REQUEST_URI'];
 			$pathBits = explode( '/', $requestUri, 3 );
 			if ( count( $pathBits ) < 3 ) {
-				trigger_error( "Invalid request URI (requestUri=" . $requestUri . "), can't determine language.\n", E_USER_ERROR );
+				print_r( "Invalid request URI (requestUri=$requestUri), can't determine language.\n" );
 				exit( 1 );
 			}
 			[ , $dbname, ] = $pathBits;
