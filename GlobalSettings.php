@@ -114,7 +114,7 @@ if ( $wi->isExtensionActive( 'CirrusSearch' ) ) {
 	}
 }
 
-if ( $wi->isExtensionActive( 'StandardDialogs' ) ) {
+if ( $wi->isAnyOfExtensionsActive( 'StandardDialogs', 'SimpleBlogPage' ) ) {
 	wfLoadExtension( 'OOJSPlus' );
 }
 
