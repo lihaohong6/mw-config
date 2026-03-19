@@ -4777,16 +4777,6 @@ $wgConf->settings += [
 				'.nomobile',
 			],
 		],
-		'danmachienwiki' => [
-			'base' => [
-				'.nomobile',
-			],
-		],
-		'mcspringfieldserverwiki' => [
-			'base' => [
-				'.nomobile',
-			],
-		],
 	],
 	'wgMFSearchAPIParams' => [
 		'default' => [
@@ -7686,6 +7676,7 @@ $wi::$disabledExtensions = [
 	'lingo' => 'Currently broken',
 	'linktitles' => 'Performance and compatibility issues ([[phorge:T14992|T14992]])',
 
+	'editsimilar' => 'Incompatible with MediaWiki 1.45',
 	'video' => 'Incompatible with MediaWiki 1.45',
 
 	// Are these still incompatible?
