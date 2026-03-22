@@ -586,7 +586,6 @@ switch ( $wi->dbname ) {
 	case 'metawikibeta':
 		wfLoadExtensions( [
 			'ContactPage',
-			'CreateWikiLoadout',
 			'GlobalWatchlist',
 			'IncidentReporting',
 			'RequestCustomDomain',

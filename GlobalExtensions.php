@@ -7,6 +7,7 @@ wfLoadExtensions( [
 	'CentralNotice',
 	'CheckUser',
 	'CreateWiki',
+	'CreateWikiLoadout', // For running the import maintenance script.
 	'CookieWarning',
 	'ConfirmEdit',
 	'ConfirmEdit/hCaptcha',
