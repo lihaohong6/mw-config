@@ -405,6 +405,11 @@ $wgConf->settings += [
 		'default' => true,
 	],
 
+	// Bucket
+	'wgBucketDBuser' => [
+		'default' => 'bucketuser',
+	],
+
 	// Cache
 	'wgCacheDirectory' => [
 		'default' => '/srv/mediawiki/cache',
