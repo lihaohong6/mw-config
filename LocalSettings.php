@@ -7749,6 +7749,7 @@ require_once '/srv/mediawiki/config/GlobalCache.php';
 require_once '/srv/mediawiki/config/GlobalLogging.php';
 require_once '/srv/mediawiki/config/Sitenotice.php';
 require_once '/srv/mediawiki/config/FileBackend.php';
+require_once '/srv/mediawiki/config/ContentSecurityPolicy.php';
 
 if ( $wgUseQuickInstantCommons ) {
 	$wgForeignFileRepos[] = [
