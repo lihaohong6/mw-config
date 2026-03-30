@@ -12,6 +12,7 @@ $wgMirahezeMagicCSPHeaderDefault = [
 		'*.miraheze.org',
 		'*.mirabeta.org',
 		'*.wikitide.org',
+		'*.wikitide.net',
 	],
 	'script-src' => [
 		'blob:',
@@ -21,6 +22,7 @@ $wgMirahezeMagicCSPHeaderDefault = [
 		'*.miraheze.org',
 		'*.mirabeta.org',
 		'*.wikitide.org',
+		'*.wikitide.net',
 		'*.wikimedia.org',
 		'*.wikipedia.org',
 		'*.wikibooks.org',
@@ -60,6 +62,7 @@ $wgMirahezeMagicCSPHeaderDefault = [
 		'*.miraheze.org',
 		'*.mirabeta.org',
 		'*.wikitide.org',
+		'*.wikitide.net',
 		'*.wikimedia.org',
 		'*.wikipedia.org',
 		'*.wikibooks.org',
@@ -92,6 +95,7 @@ $wgMirahezeMagicCSPHeaderDefault = [
 		'*.miraheze.org',
 		'*.mirabeta.org',
 		'*.wikitide.org',
+		'*.wikitide.net',
 		'upload.wikimedia.org',
 		'wikimedia.org',
 		'maps.google.com',
@@ -155,6 +159,7 @@ $wgMirahezeMagicCSPHeaderDefault = [
 		'*.miraheze.org',
 		'*.mirabeta.org',
 		'*.wikitide.org',
+		'*.wikitide.net',
 		'fonts.gstatic.com',
 		'fonts.googleapis.com',
 		'cdnjs.cloudflare.com',
@@ -170,6 +175,7 @@ $wgMirahezeMagicCSPHeaderDefault = [
 		'*.miraheze.org',
 		'*.mirabeta.org',
 		'*.wikitide.org',
+		'*.wikitide.net',
 		'upload.wikimedia.org',
 		'embed.nicovideo.jp',
 		'*.youtube.com',
@@ -186,6 +192,7 @@ $wgMirahezeMagicCSPHeaderDefault = [
 		'*.miraheze.org',
 		'*.mirabeta.org',
 		'*.wikitide.org',
+		'*.wikitide.net',
 		'www.google.com',
 		'docs.google.com',
 		'apis.google.com',
@@ -226,6 +233,7 @@ $wgMirahezeMagicCSPHeaderDefault = [
 		'*.miraheze.org',
 		'*.mirabeta.org',
 		'*.wikitide.org',
+		'*.wikitide.net',
 		'www.wikidata.org',
 		'*.wikipedia.org',
 		'www.mediawiki.org',
@@ -248,6 +256,13 @@ $wgMirahezeMagicCSPHeaderDefault = [
 		'*.instatus.com'
 	],
 ];
+
+// Add nexttide.org to beta
+if ( $wi->isBeta() ) {
+	foreach ( $wgMirahezeMagicCSPHeaderDefault as $key => $value ) {
+		$wgMirahezeMagicCSPHeaderDefault[$key][] = '*.nexttide.org';
+	}
+}
 
 // Per-wiki Content Security Policy additions
 switch ( $wgDBname ) {
