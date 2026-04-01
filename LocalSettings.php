@@ -3756,6 +3756,7 @@ $wgConf->settings += [
 				'mwoauthmanagemygrants' => true,
 				'sendemail' => false,
 				'user' => true,
+				'echo-read-notifications' => true,
 			],
 		],
 		'+allpediawiki' => [
