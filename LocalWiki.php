@@ -604,7 +604,7 @@ switch ( $wi->dbname ) {
 		$wgCreateWikiLoadoutEnabled = true;
 		$wgCreateWikiLoadoutConfigs = [
 			'default' => [
-				'xml' => '/home/petramagna/loadout.xml',
+				'xml' => 'mwstore://miraheze-swift-commons-shared/createwiki-loadouts/default.xml',
 				'extensions' => [],
 				'settings' => [],
 			],
