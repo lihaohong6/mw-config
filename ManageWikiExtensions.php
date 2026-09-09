@@ -3864,6 +3864,18 @@ $wgManageWikiExtensions = [
 		'requires' => [],
 		'section' => 'skins',
 	],
+	'utvector' => [
+		'name' => 'UTVector',
+		'linkPage' => 'https://github.com/utdrwiki/skin',
+		'help' => 'A fork of Vector 2022 maintained by the Undertale/Deltarune Wiki. It has not been renamed upstream, so it registers the <code>vector-2022</code> and <code>vector</code> skin keys itself: enabling it <b>replaces</b> Vector 2022 and Vector legacy on this wiki rather than adding a skin alongside them.',
+		'conflicts' => false,
+		'requires' => [
+			'permissions' => [
+				'managewiki-restricted',
+			],
+		],
+		'section' => 'skins',
+	],
 	'wmau' => [
 		'name' => 'WMAU',
 		'linkPage' => 'https://www.mediawiki.org/wiki/Special:MyLanguage/Skin:WMAU',

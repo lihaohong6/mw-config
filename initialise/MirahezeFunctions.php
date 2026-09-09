@@ -840,7 +840,14 @@ class MirahezeFunctions {
 
 			$extensions = glob( self::MEDIAWIKI_DIRECTORY . $this->version . '/extensions/*/extension*.json' );
 			$skins = glob( self::MEDIAWIKI_DIRECTORY . $this->version . '/skins/*/skin.json' );
-			$queue = array_fill_keys( array_merge( $extensions, $skins ), true );
+			$queue = array_fill_keys(
+				array_filter(
+					array_merge( $extensions, $skins ),
+					// UTVector is called Vector, so it conflicts with built-in Vector.
+					static fn ( string $path ): bool => $path != 'UTVector'
+				),
+				true
+			);
 
 			$processor = new ExtensionProcessor();
 			foreach ( $queue as $path => $_ ) {
